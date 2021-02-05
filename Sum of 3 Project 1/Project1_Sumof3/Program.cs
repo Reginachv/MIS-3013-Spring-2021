@@ -4,33 +4,36 @@ namespace Project1_Sumof3
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            static double sum(double n1, double n2, double n3)
-            in total;
-            total = n1 + n2 + n3;
-            return total;
+            static int sum(int num1, int num2, int num3)
+            {
+                int total;
+                total = num1 + num2 + num3;
+                return total;
+            }
+
+            static void Main(string[] args)
+           {
+                Console.WriteLine("\n\nFunction to Calculate the sum of three numbers :\n");
+            Console.WriteLine("---------------------------\n");
+                Console.WriteLine("Enter number 1");
+                int n1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter number 2");
+                int n2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter number 3");
+                int n3 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("\nThe sum of three numbers is : {0:F3} \n", sum(n1, n2, n3));
+      
+{ 
+                
+            }
         }
-
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Calculate sum of 3 numbers");
-            Console.WriteLine("Enter number 1");
-            double n1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter number 2");
-            double n2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter number 3");
-            double n3 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Calculate sum of 3 numbers is: { 0:F3}", sum(n1, n2, n3));
-
-        }
-
-
-
-
-
-
-
     }
 }
-}
+
+
+
+
+
+
+
+
