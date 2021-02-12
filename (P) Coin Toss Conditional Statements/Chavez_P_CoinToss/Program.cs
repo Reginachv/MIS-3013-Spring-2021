@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Chavez_P_CoinToss
+namespace Chavez_Participation
 {
     class Program
     {
         static void Main(string[] args)
         {
-            const string DEVELOPER_INFO = "Regina Chavez";
+             /* const string DEVELOPER_INFO = "Regina Chavez";
 
             int answer = 0;
 
@@ -46,6 +46,7 @@ namespace Chavez_P_CoinToss
                 Console.WriteLine("Your guess was incorrect, sorry :(");
             }
             Console.WriteLine($"Developed by {DEVELOPER_INFO}");
+            */
         }
     }
 }
