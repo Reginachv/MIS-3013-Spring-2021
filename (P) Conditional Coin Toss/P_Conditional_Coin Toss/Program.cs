@@ -9,16 +9,9 @@ namespace P_Conditional_Coin_Toss
         static void Main(string[] args)
         {
             const string DEVELOPER_INFO = "Regina Chavez";
-            Random rand = new Random();
-            int randomNbr = rand.Next(1, 3);
-            Console.WriteLine($"{randomNbr}");
-
-            //1 = heads
-            //2 = tails
 
             Console.WriteLine("Guess heads by entering 1 or tails by entering 2 for a coin toss");
-            string answer = Console.ReadLine();
-            
+            int answer = Convert.ToInt32(Console.ReadLine());
 
             if (answer == 1)
             {
@@ -28,7 +21,11 @@ namespace P_Conditional_Coin_Toss
             {
                 Console.WriteLine("You guessed tails");
 
-            if (randomNbr == 1)
+                Random rand = new Random();
+                int randomNbr = rand.Next(1, 3);
+                Console.WriteLine($"{randomNbr}");
+
+                if (randomNbr == 1)
                 {
                 Console.WriteLine("The coin landed on Heads");
                 }
