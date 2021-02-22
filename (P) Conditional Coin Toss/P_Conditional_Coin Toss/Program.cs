@@ -15,15 +15,17 @@ namespace P_Conditional_Coin_Toss
             while(answer != 1 && answer != 2)
             {
                 Console.WriteLine("Guess heads by entering 1 or tails by entering 2 for a coin toss");
+                //Heads = 1
+                //Tails = 2
                 answer = Convert.ToInt32(Console.ReadLine());
             }
 
             if (answer == 1)
             {
-                Console.WriteLine("You guessed heads");
+                Console.WriteLine("You guessed HEADS");
             }
             else {
-                Console.WriteLine("You guessed tails");
+                Console.WriteLine("You guessed TAILS");
             }
 
             Random rand = new Random();
@@ -32,21 +34,21 @@ namespace P_Conditional_Coin_Toss
 
             if (randomNbr == 1)
             {
-                Console.WriteLine("The coin landed on Heads");
+                Console.WriteLine("\nThe coin landed on HEADS");
             }
             else
             {
-                Console.WriteLine("The coin landed on Tails");
+                Console.WriteLine("\nThe coin landed on TAILS");
             }
             if (randomNbr == answer)
             {
-                Console.WriteLine("Your guess was correct");
+                Console.WriteLine("\nYour guess was correct");
             }
             else
             {
-                Console.WriteLine("Your guess was incorrect, sorry :(");
+                Console.WriteLine("\nYour guess was incorrect, sorry :(");
             }
-            Console.WriteLine($"Developed by {DEVELOPER_INFO}");
+            Console.WriteLine($"\nDeveloped by {DEVELOPER_INFO}");
         }
     }
 }
