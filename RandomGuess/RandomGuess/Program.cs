@@ -11,9 +11,9 @@ namespace RandomGuess
             int guess = 0;
 
             Console.WriteLine("\nI am thinking of a number between 1 and 10, can you guess what it is?");
-            
-
-            do
+           
+            /*
+                do
             {
                 Int32.TryParse(Console.ReadLine(), out guess);
                 if (guess > 10 || guess < 1)
@@ -22,10 +22,10 @@ namespace RandomGuess
 
             for (int i = 0; i < guess; i++)
                 Console.WriteLine("Please choose a number between 1 and 10");
-                Console.ReadLine();   
+                Console.ReadLine();  **/ 
 
             while (guess != randomNbr)
-                { 
+            { 
                 guess = Convert.ToInt32(Console.ReadLine());
             }
             while (guess == randomNbr)
