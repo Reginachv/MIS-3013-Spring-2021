@@ -16,6 +16,7 @@ namespace Loop_Example_Feb24
 
             Console.WriteLine($"All the #'s added up from 1 and 100 is {sum.ToString()}");
 
+            // string [] lines = File.ReadAllLines();
         }
     }
 }
