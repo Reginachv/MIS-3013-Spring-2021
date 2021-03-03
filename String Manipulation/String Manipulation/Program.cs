@@ -6,7 +6,7 @@ namespace String_Manipulation
     {
         static void Main(string[] args)
         {
-            string message = ("tAylOr SwIFt, tHe WeEknD, TRaVis sCoTt, aRiANa gRAndE, bIlLiE eiLiSH");
+             string message = ("tAylOr SwIFt, tHe WeEknD, TRaVis sCoTt, aRiANa gRAndE, bIlLiE eiLiSH");
 
             //string msg2 = message.ToLower();
             //string msg3 = msg2.Substring(1);
@@ -26,7 +26,8 @@ namespace String_Manipulation
                string NewArtist = firstName.ToUpper()[0] + firstName.ToLower().Substring(1) + " " +
                                   lastName.ToUpper()[0] + lastName.ToLower().Substring(1);
 
-                Console.WriteLine(NewArtist);
+                Console.WriteLine(NewArtist); 
+            
             }
         }      
     }
