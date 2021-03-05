@@ -6,28 +6,41 @@ namespace _P__String_Manipulation
     {
         static void Main(string[] args)
         {
-            string message = ("Programming today is a race software engineers striving engineers striving to build bigger and better idiot proof programs, and the univers trying to build bigger and better idiots. So far, the universe is winning.");
-            
-            string[] words = new string[_wordCount];
-            string[] splitSentence = new string[_wordCount];
-            for (int j= 0; j < words.Length; j++)
+            string message = "Programming today is a race software engineers striving engineers striving to build bigger and better idiot proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning.";
+            Console.WriteLine(message);
 
+            Console.WriteLine("\nWhat word are you trying replace in the statement above?");
+            string find = Console.ReadLine();
+
+            Console.WriteLine("\n What word would you like to display instead?");
+            string replace = Console.ReadLine();
+
+            if (!message.Contains(find) == true)
             {
-                Console.WriteLine("What word are you trying to find and replace in the statement above?");
-                String find = Console.ReadLine();
-                string[] splitSentence = message.Split(' ', '.', ',');
-                
-                Console.WriteLine("With what word would you like to replace it with?");
-                String Console.ReadLine();
+                Console.WriteLine("\n'{0}' is in the string '{1}': {2}", find, message);
 
-                if (splitSentence[j] == words[i])
-                   splitSentence[j] == words[i].Replace(words[i], "*");
+                string[] words = message.Split(' ', '.', ',');
 
+                for (int i = 0; i < words.Length; i++)
+                {
+                    string output = message;
+                    output = output.Replace(find, replace);
+
+                    Console.WriteLine(output); }
+            }
+            else
+            {
+                Console.WriteLine("Sorry, I could not find your word {find}");
+               
+                string[] words = find.Split(' ');
+                Array.Reverse(words);
+                message = String.Join(" ", words);
             }   
-
-
+        
+            }
         }
     }
-}
+
+
 
      
