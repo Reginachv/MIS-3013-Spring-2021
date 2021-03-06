@@ -12,29 +12,33 @@ namespace _P__String_Manipulation
             Console.WriteLine("\nWhat word are you trying replace in the statement above?");
             string find = Console.ReadLine();
 
-            Console.WriteLine("\n What word would you like to display instead?");
-            string replace = Console.ReadLine();
-
-            if (!message.Contains(find) == true)
+            if (message.Contains(find) == true)
             {
-                Console.WriteLine("\n'{0}' is in the string '{1}': {2}", find, message);
+               // Console.WriteLine("\n'{0}' is in the string '{1}': {2}", find, message);
+
+                Console.WriteLine("\n What word would you like to display instead?");
+                string replace = Console.ReadLine();
 
                 string[] words = message.Split(' ', '.', ',');
-
+                string output = message;
                 for (int i = 0; i < words.Length; i++)
                 {
-                    string output = message;
                     output = output.Replace(find, replace);
+                }
 
-                    Console.WriteLine(output); }
+                Console.WriteLine(output);
             }
             else
             {
-                Console.WriteLine("Sorry, I could not find your word {find}");
+                Console.WriteLine("Sorry, I could not find your word " + find);
                
-                string[] words = find.Split(' ');
-                Array.Reverse(words);
-                message = String.Join(" ", words);
+               // string[] words = find.Split(' ');
+                char[] tempArray = find.ToCharArray();
+                Array.Reverse(tempArray);
+                string reversedFind = new String(tempArray);
+
+                //Console.WriteLine("Find is: " + find);
+                Console.WriteLine("Your word reversed is: " + reversedFind);
             }   
         
             }
