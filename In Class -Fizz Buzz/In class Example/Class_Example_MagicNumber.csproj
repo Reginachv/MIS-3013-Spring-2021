@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_P__String_Maipulation</RootNamespace>
+    <RootNamespace>In_class_Example</RootNamespace>
   </PropertyGroup>
 
 </Project>
