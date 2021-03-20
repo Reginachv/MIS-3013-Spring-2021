@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conditional Coin Toss", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops_Guess_a_Number", "Loops_Guess_a_Number\Loops_Guess_a_Number.csproj", "{0C4875B8-D928-4338-B1C5-AF6AA23F920B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String Manipulation", "String Manipulation\String Manipulation.csproj", "{77A3847C-BFB1-4C95-89B4-FA15AE67B64C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0C4875B8-D928-4338-B1C5-AF6AA23F920B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C4875B8-D928-4338-B1C5-AF6AA23F920B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C4875B8-D928-4338-B1C5-AF6AA23F920B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A3847C-BFB1-4C95-89B4-FA15AE67B64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A3847C-BFB1-4C95-89B4-FA15AE67B64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A3847C-BFB1-4C95-89B4-FA15AE67B64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A3847C-BFB1-4C95-89B4-FA15AE67B64C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
