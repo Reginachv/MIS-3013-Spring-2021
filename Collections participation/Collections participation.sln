@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections Participations", "Collections Participations\Collections Participations.csproj", "{71A2F8FC-EE4F-4119-959F-D868D0DF2B82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_Collection", "Collections Participations\Example_Collection.csproj", "{71A2F8FC-EE4F-4119-959F-D868D0DF2B82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2", "Part2\Part2.csproj", "{42A2B7E4-12ED-4298-826C-6AF85CFF8FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part2", "Part2\Part2.csproj", "{42A2B7E4-12ED-4298-826C-6AF85CFF8FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part 3", "Part 3\Part 3.csproj", "{89C2F2A1-8732-4A33-916D-4429E0D731E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Part 3", "Part 3\Part 3.csproj", "{89C2F2A1-8732-4A33-916D-4429E0D731E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
