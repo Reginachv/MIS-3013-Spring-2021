@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace String_Manipulation_Example_2
+namespace InClassEx_StringManipulation
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace String_Manipulation_Example_2
                     + msg2.ToUpper()[indexOfSpace + 1] + msg2.ToLower().Substring(indexOfSpace + 2);
             
             Console.WriteLine(msg2); */
-            return; 
+            return;
 
             //string msg2 = message.ToLower();
             //string msg3 = msg2.Substring(1);
@@ -33,8 +33,9 @@ namespace String_Manipulation_Example_2
 
                 string NewArtist = firstName.ToUpper()[0] + firstName.ToLower().Substring(1) + " " +
                                    lastName.ToUpper()[0] + lastName.ToLower().Substring(1);
-
-                Console.WriteLine(NewArtist);
             }
+                Console.WriteLine(NewArtist);
+            
+        }
     }
 }
