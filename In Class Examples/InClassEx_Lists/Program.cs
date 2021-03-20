@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace InClassEx_Lists
 {
@@ -6,21 +7,23 @@ namespace InClassEx_Lists
     {
         static void Main(string[] args)
         {
-            List string
-            /*string answer;
+            List<string> favoriteThings = new List<string>();
+            string answer;
             do
             {
                 Console.WriteLine("Name one of your favorite things >>");
-                string answer = Console.ReadLine();
+                answer = Console.ReadLine();
 
                 favoriteThings.Add(answer);
 
                 Console.WriteLine("do you have another favorite thing? >>");
 
-            } while (answer.ToLower()[0] == 'y')
-            {
+            } while (answer.ToLower()[0] == 'y');
+            
                 Random rand = new Random();
-                int index = rand.Next(0, favoriteThings.Count);*/
+                int index = rand.Next(0, favoriteThings.Count);
+
+                Console.WriteLine(favoriteThings[index]);
             }
     }
 }
