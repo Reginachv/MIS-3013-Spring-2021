@@ -8,35 +8,41 @@ namespace _P__Collections_MinMaxAvgMode
         static void Main(string[] args)
         {
             List<double> examGrades = new List<double>();
-            string answer;
+            Console.WriteLine("How many exam grades do you have?");
+            int howManyExams = Convert.ToInt32(Console.ReadLine());
 
-            do
+            for (int i = 0; i < howManyExams; i++)
             {
-                Console.WriteLine("What are your Exam Grades?");
-                answer = Console.ReadLine();
-                double grade = Convert.ToDouble(answer);
+                Console.WriteLine("Name the Exam name");
+                String examName = new string(Console.ReadLine());
+            }
+
+            for (int i = 0; i < howManyExams; i++)
+            {
+                Console.WriteLine("What is your exam grade?");
+                string answer = Console.ReadLine();
+                double grade;
 
                 if (double.TryParse(answer, out grade) == false)
                 {
-                    Console.WriteLine("invalid number");
-                }
+                    Console.WriteLine("invalid exam grade");
+                }         
                 else
                 {
-
+                   
                 }
 
-                examGrades.Add(grade);
+                Console.WriteLine();
+                
+                //min;max;avg;mode
 
-                Console.WriteLine("Do you have another Exam Grade?");
-                answer = Console.ReadLine();
-                Convert.ToDouble(answer);
-            } 
-           
-      
-            {
+
+
 
             }
-               
         }
     }
 }
+
+ 
+

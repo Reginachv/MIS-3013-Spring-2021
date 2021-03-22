@@ -17,6 +17,7 @@ namespace InClassEx_Lists
                 favoriteThings.Add(answer);
 
                 Console.WriteLine("do you have another favorite thing? >>");
+                answer = Console.ReadLine();
 
             } while (answer.ToLower()[0] == 'y');
             
