@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InClassEx_Collections", "In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InClassExample_Dictionary", "InClassExample_Dictionary\InClassExample_Dictionary.csproj", "{79F2CD47-7D14-4AD2-8BD3-3DCA085DD795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InClassEx_Lists", "InClassEx_Lists\InClassEx_Lists.csproj", "{068C2B2F-E56E-464D-A9D7-BCA8217CDCE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InClassEx_Lists", "InClassEx_Lists\InClassEx_Lists.csproj", "{068C2B2F-E56E-464D-A9D7-BCA8217CDCE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InClassExample_P.Collections", "InClassExample_P.Collections\InClassExample_P.Collections.csproj", "{F6A20B76-8500-44FE-A23C-B04E6C1FAEDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{068C2B2F-E56E-464D-A9D7-BCA8217CDCE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{068C2B2F-E56E-464D-A9D7-BCA8217CDCE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{068C2B2F-E56E-464D-A9D7-BCA8217CDCE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A20B76-8500-44FE-A23C-B04E6C1FAEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A20B76-8500-44FE-A23C-B04E6C1FAEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A20B76-8500-44FE-A23C-B04E6C1FAEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A20B76-8500-44FE-A23C-B04E6C1FAEDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
