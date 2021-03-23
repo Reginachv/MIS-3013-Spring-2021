@@ -8,21 +8,88 @@ namespace _P__Collections_MinMaxAvgMode
     {
         static void Main(string[] args)
         {
-            //List<double> examGrades = new List<double>();
 
-            Dictionary<string, List<double>> Exams = new Dictionary<string, List<double>>();
-            Console.WriteLine("How many exam grades do you have?");
-            int howManyExams = Convert.ToInt32(Console.ReadLine());
+            string answer;
 
-            for (int i = 0; i < howManyExams; i++)
+            List<double> examScores = new List<double>();
+            Dictionary<double, int> exams = new Dictionary<double, int>();
+
+            Console.WriteLine("How Many exams?");
+            int numberofExams = Convert.ToInt32(Console.ReadLine());
+
+            do
             {
-                Console.WriteLine("What is the subject of Exam {0}:", i);
-                var examName = Console.ReadLine();
-                Exams.Add(examName, new List<double>());
-                for (int test = 0; test < howManyExams; test++)
+                Console.WriteLine("Enter your exam score: >>");
+                answer = Console.ReadLine();
+
+                double score = Convert.ToDouble(answer); //assuming the user knows what they are doing so no TryParse
+                examScores.Add(score); //store the value
+
+                Console.WriteLine("do you have another exam grade, yes or no?>>");
+                answer = Console.ReadLine();
+
+            } while (answer.ToLower()[0] == 'y');
+
+            double min = examScores[0];
+
+            foreach (double score in examScores)
+            {
+                if (score < min)
                 {
-                    Console.WriteLine("Enter exam score {0} for " + "examName{1}: ", test, examName);
-                    Exams[examName].Add(Convert.ToDouble(Console.ReadLine()));
+                    min = score;
+                }
+                if (exams.ContainsKey(score) == true)
+                {
+                    exams[score] = exams[score] + 1;
+                }
+                else
+                {
+                    exams.Add(score, 1);
+                }
+            }
+            double max = examScores[0];
+
+            foreach (double score in examScores)
+            {
+                if (score > max)
+                {
+                    max = score;
+                }
+                if (exams.ContainsKey(score) == true)
+                {
+                    exams[score] = exams[score] + 1;
+                }
+                else
+                {
+                    exams.Add(score, 1);
+                }
+            }
+            double sum = 0;
+
+            foreach (double score in examScores)
+            {
+                sum = sum + score;
+            }
+
+            double avg = sum / numberofExams;
+
+
+            Console.WriteLine($"The average of exam score is: {avg.ToString("N2")}");
+            Console.WriteLine($"the minimum exam score is: {min.ToString("N2")}");
+            Console.WriteLine($"the minimum exam score is: {max.ToString("N2")}");
+            int highestOccurence = 0;
+            foreach (double scoreKey in exams.Keys)
+            {
+                if (exams[scoreKey] > highestOccurence)
+                {
+                    highestOccurence = exams[scoreKey];
+                }
+            }   
+                foreach (double scorekey in exams.Keys)
+                 {
+                    if (exams[scorekey] == highestOccurence)
+                {
+                    Console.WriteLine($"{scorekey} occurs the most.");
                 }
             }
         }
