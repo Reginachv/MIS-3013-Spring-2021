@@ -8,53 +8,31 @@ namespace _P__Collections_MinMaxAvgMode
     {
         static void Main(string[] args)
         {
-            List<double> examGrades = new List<double>();
-            Dictionary<double, int> exams = new Dictionary<double, int>();
+            //List<double> examGrades = new List<double>();
+
+            Dictionary<string, List<double>> Exams = new Dictionary<string, List<double>>();
             Console.WriteLine("How many exam grades do you have?");
             int howManyExams = Convert.ToInt32(Console.ReadLine());
-            string answer;
-
-            /*  for (int i = 0; i < howManyExams; i++)
-              {
-                  Console.WriteLine("Name the Exam name");
-                  String examName = new string(Console.ReadLine());
-              }*/
 
             for (int i = 0; i < howManyExams; i++)
             {
-            
-                    Console.WriteLine("What is your exam grade? (e.g. 92)");
-                    answer = Console.ReadLine();
-
-                    double grade = Convert.ToDouble(answer);
-                 
-               }
-
-            answer = Console.ReadLine();
-            double min = examGrades[0];
-
-            foreach (double grade in examGrades)
-            {
-                if (grade < min)
+                Console.WriteLine("What is the subject of Exam {0}:", i);
+                var examName = Console.ReadLine();
+                Exams.Add(examName, new List<double>());
+                for (int test = 0; test < howManyExams; test++)
                 {
-                    min = grade;
-                }
-                if (exams.ContainsKey(grade) == true)
-                {
-                    exams[grade] = exams[grade] + 1;
-                }
-                else
-                {
-                    exams.Add(grade, 1);
-                }
-            }
-
-            Console.WriteLine($"The minimimum exam grade is {min.ToString("N2")}");
-
+                    Console.WriteLine("Enter exam score {0} for " + "examName{1}: ", test, examName);
+                    Exams[examName].Add(Convert.ToDouble(Console.ReadLine()));
                 }
             }
         }
-    
+    }
+}
+      
 
- 
+
+
+
+
+
 
