@@ -29,6 +29,7 @@ namespace Collection__P__Max_Min__Average__Mode
             } while (answer.ToLower()[0] == 'y');
 
             double min = examScores[0];
+            double max = examScores[0];
 
             foreach (double score in examScores)
             {
@@ -36,24 +37,11 @@ namespace Collection__P__Max_Min__Average__Mode
                 {
                     min = score;
                 }
-                if (exams.ContainsKey(score) == true)
-                {
-                    exams[score] = exams[score] + 1;
-                }
-                else
-                {
-                    exams.Add(score, 1);
-                }
-            }
-            double max = examScores[0];
-
-            foreach (double score in examScores)
-            {
                 if (score > max)
                 {
                     max = score;
                 }
-                if (exams.ContainsKey(score) == true)
+                    if (exams.ContainsKey(score) == true)
                 {
                     exams[score] = exams[score] + 1;
                 }
@@ -62,14 +50,15 @@ namespace Collection__P__Max_Min__Average__Mode
                     exams.Add(score, 1);
                 }
             }
+            
+            double sum = 0;
+            double avg = 0;
 
-            double sum = examScores[0];
-            double avg = examScores[0];
-           
            foreach (double score in examScores)
             {
-                sum = + score;
+                sum += score;
                 avg = sum / numberofExams;
+                //avg = sum/examScores.Count;
             }
 
             Console.WriteLine($"The average of exam score is: {avg.ToString("N2")}");
