@@ -8,7 +8,7 @@ namespace InClassEx_Functions_March31
         static void Main(string[] args)
 
         {
-            List<double> numbers = new List<double>();
+           /* List<double> numbers = new List<double>();
             string answer;
 
             do
@@ -18,22 +18,23 @@ namespace InClassEx_Functions_March31
                 Console.WriteLine("Do you want to enter more numbers? yes or no >> ");
                 answer = Console.ReadLine();
             } while (answer.ToLower()[0] == 'y'); // only check if there is a "y" not necessarily yes or no
-        }
+        } */
 
-        static double ValidateDoubleInput(string message)
-        {
+        //static double ValidateDoubleInput(string message)
+        //{
+            /*
             double value;
-            string answer;
+            string answer;*/
             //Console.WriteLine( "Do you want to go agian yes or no? >>")
             // while (answer != "yes" && answer != "no")
-            {
+          /*  {
                 Console.WriteLine("Sorry, answer yes or no only");
                 Console.WriteLine("Do you want to go again? yes or no");
                 answer = Console.ReadLine().ToLower();
             }
-            if (answer == "yes")
+            if (answer == "yes") */
 
-            do
+           /* do
             {
                 Console.WriteLine(message);
                 answer = Console.ReadLine();
@@ -55,4 +56,4 @@ namespace InClassEx_Functions_March31
         }
     }
     }
-}
+
