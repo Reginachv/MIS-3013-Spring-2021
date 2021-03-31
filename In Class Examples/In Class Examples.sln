@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InClassExample_P.Collection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection (P) Max,Min, Average, Mode", "Collection (P) Max,Min, Average, Mode\Collection (P) Max,Min, Average, Mode.csproj", "{DE4836EE-2898-40BE-B260-0E50548C0B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection_AllTypesofCollections", "Collection_AllTypesofCollections\Collection_AllTypesofCollections.csproj", "{F300F9CB-AE06-4267-891B-B82EB9CD3D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection_AllTypesofCollections", "Collection_AllTypesofCollections\Collection_AllTypesofCollections.csproj", "{F300F9CB-AE06-4267-891B-B82EB9CD3D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InClassEx_Functions_March31", "InClassEx_Functions_March31\InClassEx_Functions_March31.csproj", "{96836134-D48F-4719-9675-475C6C598209}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{F300F9CB-AE06-4267-891B-B82EB9CD3D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F300F9CB-AE06-4267-891B-B82EB9CD3D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F300F9CB-AE06-4267-891B-B82EB9CD3D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96836134-D48F-4719-9675-475C6C598209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96836134-D48F-4719-9675-475C6C598209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96836134-D48F-4719-9675-475C6C598209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96836134-D48F-4719-9675-475C6C598209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
