@@ -8,41 +8,7 @@ namespace InClassEx_Functions_March31
         static void Main(string[] args)
 
         {
-           /* List<double> numbers = new List<double>();
-            string answer;
-
-            do
-            {
-                double gpa = ValidateDoubleInput("Please enter a GPA >>");
-                gpas.Add(gpa)
-                Console.WriteLine("Do you want to enter more numbers? yes or no >> ");
-                answer = Console.ReadLine();
-            } while (answer.ToLower()[0] == 'y'); // only check if there is a "y" not necessarily yes or no
-        } */
-
-        //static double ValidateDoubleInput(string message)
-        //{
-            /*
-            double value;
-            string answer;*/
-            //Console.WriteLine( "Do you want to go agian yes or no? >>")
-            // while (answer != "yes" && answer != "no")
-          /*  {
-                Console.WriteLine("Sorry, answer yes or no only");
-                Console.WriteLine("Do you want to go again? yes or no");
-                answer = Console.ReadLine().ToLower();
-            }
-            if (answer == "yes") */
-
-           /* do
-            {
-                Console.WriteLine(message);
-                answer = Console.ReadLine();
-
-                //bool isDouble = doble.TryParse(answer, out value):
-            } while (double.TryParse((answer, out value) == false)
-
-            /*List<double> itemPrices = new List<double>();
+            List<double> gpas = new List<double>();
             string answer;
 
             do
@@ -50,10 +16,65 @@ namespace InClassEx_Functions_March31
                 double gpa = ValidateDoubleInput("Please enter a GPA >>");
                 gpas.Add(gpa);
 
-                Console.WriteLine("Do you want to enter more numbers? yes or no >> ");
-                answer = Console.ReadLine();
-            } while (answer.ToLower()[0] == 'y'); */
+                //
+                //
+                //
+
+            } while (AskUserToContinue() = new List<double>());
+
+            List<double> itemPrices = new List<double>();
+
+            bool shouldContinue;
+            do
+            {
+                double itemPrice = ValidateDoubleInput("Please enter the item's price >>");
+                itemPrices.Add(itemPrice);
+
+                //Console.WriteLine("Do you want to enter more prices for items? >>");
+                //answer = Console.ReadLine();
+
+                shouldContinue = AskUserToContinue();
+
+            } while (shouldContinue == true);
         }
-    }
+
+        private static bool AskUserToContinue()
+        {
+            Console.WriteLine("Do you want to go again? Yes or No? >>");
+            string answer = Console.ReadLine().ToLower();
+
+            while (answer != "yes" && != "no")
+            {
+                Console.WriteLine("Sorry, you must answer yes or no");
+
+                Console.WriteLine("Do you want to go again? Yes or No >>");
+                answer = Console.ReadLine().ToLower();
+            }
+            if (answer == "yes")
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        static double ValidateDoubleInput(string message)
+            {
+                double value;
+                string answer;
+                do
+                {
+                    Console.WriteLine(message);
+                    answer = Console.ReadLine();
+
+                    //bool isDouble = double.TryParse(answer, out value);
+                } while (double.TryParse(answer, out value) == false);
+
+                return value;
+            }
+        }
+
     }
 
+
+          
