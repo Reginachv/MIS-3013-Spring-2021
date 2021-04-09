@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace _P__Functions_Calculator
+namespace _P__Simple_Method
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+        }
+        
         }
     }
 }
