@@ -19,7 +19,7 @@ namespace Functions_Calculator
                 if (!t)
                 {
                     Methods();
-                    InputNumbers(); // values
+                    InputParm(); // values
                     t = true;
                 }
                 switch (method) //method user chooses from list
@@ -55,7 +55,7 @@ namespace Functions_Calculator
                     numbers = Console.ReadLine();
                     if (numbers == "y")
                     {
-                        InputNumbers();
+                        InputParm();
                         Methods();
                     }
                     else
@@ -70,13 +70,13 @@ namespace Functions_Calculator
 
                 Console.WriteLine("\nWould you like to use a different method yes or no?"); //ran into problems with other loops
                  c = Convert.ToChar(Console.ReadLine());
-                 if (c == 'y') //assuming user inout yes or no
+                 if (c == 'y') //assuming user inputs yes or no
                  {
                      Console.WriteLine("Do you want to try with different numbers yes or no?");
                      char variable = Convert.ToChar(Console.ReadLine());
                      if (variable == 'y')
                      {
-                         InputNumbers();
+                         InputParm();
                          Methods();
                      }
                      else
@@ -102,7 +102,7 @@ namespace Functions_Calculator
             Console.WriteLine("Developer information of: " +  name + "\nClass:" + className + "\nToday's Date:" + date);
         } 
                 
-        private static void InputNumbers() 
+        private static void InputParm() 
         {
             Console.WriteLine("Enter an first number:");
             val1 = Convert.ToDouble(Console.ReadLine());
