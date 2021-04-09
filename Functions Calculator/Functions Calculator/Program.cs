@@ -7,9 +7,12 @@ namespace Functions_Calculator
         static int method;
         static double val1, val2;
         static Boolean t = false;
+        static string name, className, date;
         static void Main(string[] args)
         {
-           
+            DeveloperInformation(name, className, date);
+
+
             char c = 'n';
             do
             {
@@ -41,13 +44,16 @@ namespace Functions_Calculator
                         Console.WriteLine("Error! Invalid method");
                         break;
                 }
-                Console.WriteLine("\nWould you like to use a different method (y/n)?");
-                c = Convert.ToChar(Console.ReadLine());
-                if (c == 'y')
+                /*string answer;
+                string numbers;
+
+                Console.WriteLine("\nWould you like to use a different method yes or no?");
+                answer = Console.ReadLine();
+                if (answer == "y")
                 {
-                    Console.WriteLine("Do you want to enter another variable (y/n)?");
-                    char variable = Convert.ToChar(Console.ReadLine());
-                    if (variable == 'y')
+                    Console.WriteLine("Do you want to try with different numbers yes or no?");
+                    numbers = Console.ReadLine();
+                    if (numbers == "y")
                     {
                         InputNumbers();
                         Methods();
@@ -60,19 +66,41 @@ namespace Functions_Calculator
                 else
                 {
                     Console.WriteLine("Thanks for trying the methods!!");
-                }
-            } while (c == 'y');
-           
-        }
+                } while (answer == "y") */
+
+                Console.WriteLine("\nWould you like to use a different method yes or no?"); //ran into problems with other loops
+                 c = Convert.ToChar(Console.ReadLine());
+                 if (c == 'y') //assuming user inout yes or no
+                 {
+                     Console.WriteLine("Do you want to try with different numbers yes or no?");
+                     char variable = Convert.ToChar(Console.ReadLine());
+                     if (variable == 'y')
+                     {
+                         InputNumbers();
+                         Methods();
+                     }
+                     else
+                     {
+                         Methods();
+                     }
+                 }
+                 else
+                 {
+                     Console.WriteLine("Thanks for trying the methods!!");
+                 }
+             } while (c == 'y'); 
+
+            } 
         static void DeveloperInformation(string name, string className, string date)
-        { 
-            Console.WriteLine("What is your name");
+        {
+            Console.WriteLine("What is your first and last name");
             name = Console.ReadLine();
             Console.WriteLine("What is your class name");
             className = Console.ReadLine();
             Console.WriteLine("What is the date");
             date = Console.ReadLine();
-        }
+            Console.WriteLine("Developer information of: " +  name + "\nClass:" + className + "\nToday's Date:" + date);
+        } 
                 
         private static void InputNumbers() 
         {
