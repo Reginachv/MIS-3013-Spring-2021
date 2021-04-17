@@ -18,7 +18,7 @@ namespace _P__Classes_Toy
                 Name = " "; 
                 Price = 0; 
                 Notes = " ";
-               //Include Notes : "Available in  colors: Ex. Red, Blue, Black, Gray";
+               //Notes : Extra Info about Toy
             }
             public Toy(string manufacturer, string name, double price, string notes )
             {
@@ -27,22 +27,24 @@ namespace _P__Classes_Toy
                 this.Price = price;
                 this.Notes = notes;
             }
-            
-             public String GetAisle()
+            public String GetAisle()
               {
                 
                 string Manu;
                
                 Manu = Manufacturer.Substring(0, 1).ToUpper();
                 Random rand = new Random();
-                     int randomNumber= rand.Next(1, 25);
+                int randomNumber= rand.Next(1, 25);
 
-                return "The " + Manu + randomNumber;
+                string result = Manu + randomNumber;
+
+                return result;
               }  
             public void AllToy() 
             {
                 Console.WriteLine("\n Manufacturer: " + Manufacturer + "\n Toy Name: " + Name + "\n Price: $" + Price + "\n Notes: " + Notes); // can take out "Notes:" for cleaner look
-            } 
+            }
+           
             static void Main(string[] args) //Main Method
             {
                 
@@ -52,19 +54,19 @@ namespace _P__Classes_Toy
                 toy[0].setManufacturer("Nintendo");
                 toy[0].setName("Nintendo Switch");
                 toy[0].setPrice(269.99);
-                toy[0].setNotes("Available in colors: red, black, and gray");
+                toy[0].setNotes("Available in colors: red, black, and gray and limited edition for collectors"); 
 
                 toy[1] = new Toy();
                 toy[1].setManufacturer("MGA Entertainment");
                 toy[1].setName("Bratz Dolls");
                 toy[1].setPrice(29.54);
-                toy[1].setNotes("Available dolls are: Yasmin, Cloe, Sasha, Jade");
+                toy[1].setNotes("Available dolls are: Yasmin, Cloe, Sasha, and Jade ACCESSORIES NOT INCLUDED!!!"); 
 
                 toy[2] = new Toy();
                 toy[2].setManufacturer("US General");
                 toy[2].setName("Workbench");
                 toy[2].setPrice(19.99);
-                toy[2].setNotes("Kid's can set up and play with this toy workbench that has realistic drill press action");
+                toy[2].setNotes("Kid's can set up and play with this toy workbench that has realistic drill press action"); //more of a descriptive note got off walmart >.< 
                
                 Console.WriteLine("Toy's available:");
                 for (int i = 0; i < toy.Length; i ++)
@@ -74,7 +76,7 @@ namespace _P__Classes_Toy
                 
             }
 
-            private void setNotes(string Notes) //suggested by question mark => in order to set information 
+            private void setNotes(string Notes) //suggested by question mark => in order to set information in array
             {
                 this.Notes = Notes;
             }
