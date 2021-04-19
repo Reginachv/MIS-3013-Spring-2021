@@ -26,6 +26,7 @@ namespace HW_6
 
                 Console.WriteLine("Would you like to order anything else yes or no >>");
                 answer = Console.ReadLine();
+
             } while (answer.ToLower() == "yes");
 
             Console.WriteLine("\n You ordered:");
@@ -40,16 +41,20 @@ namespace HW_6
                 }
                 else
                 {
-                    Console.WriteLine(", " + item);
+                    Console.WriteLine(item + ",");
                 }
-                Console.WriteLine();
-                Console.WriteLine($"({orderHistory.Count} drinks!)That is a total of");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"{total.ToString("C")}!");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("\n Thank you for playing!");
             }
-        }
+                Console.WriteLine();
+                Console.Write($"({orderHistory.Count} drinks!)That is a total of");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write($" {total.ToString("C")}!");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(" worth of coffee!!");
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("\n\nThank you for playing!");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
 
     static string GetMenu()
     {
@@ -72,7 +77,7 @@ namespace HW_6
             case "Fresh Coffee":
                 result = 2.25;
                 break;
-            case "Café au lait":
+            case "Cafe au lait": //accent could have been included - Café au lait 
                 result = 3.72;
                 break;
             case "Latte":
@@ -81,7 +86,7 @@ namespace HW_6
             case "Hot Chocolate":
                 result = 3.51;
                 break;
-            case "Pumpkiin Spice":
+            case "Pumpkin Spice":
                 result = 7.30;
                 break;
             default:
@@ -94,18 +99,19 @@ namespace HW_6
     {
         double tax = subTotal * TAX_RATE;
         double total = subTotal + tax;
+        Console.Write($"Subtotal for your drink(s) is");
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.Write($" {subTotal.ToString("C")}");
+        Console.ForegroundColor = ConsoleColor.White;
 
-        Console.WriteLine($"\nYour subtotal for your drink(s) is:");
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"{subTotal.ToString("C2")}");
+        Console.Write($".  Tax for your drink(s) is");
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.Write($" {tax.ToString("C")}");
         Console.ForegroundColor = ConsoleColor.White;
-        Console.WriteLine($"Your tax for your drink(s) is");
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"{tax.ToString("C")}");
-        Console.ForegroundColor = ConsoleColor.White;
-        Console.WriteLine($"Your total your drink(s) is");
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"{total.ToString("C2")}");
+
+        Console.Write($" Total your drink(s) is");
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.Write($" {total.ToString("C")}");
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine();
         }
