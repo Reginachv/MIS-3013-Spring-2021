@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) Classes - Cereal", "(P) Classes - Cereal\(P) Classes - Cereal.csproj", "{3F61BF04-3C74-47FE-814B-8607CB779C7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F61BF04-3C74-47FE-814B-8607CB779C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F61BF04-3C74-47FE-814B-8607CB779C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F61BF04-3C74-47FE-814B-8607CB779C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F61BF04-3C74-47FE-814B-8607CB779C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6768E02F-4172-4E3A-962C-8F32A96277A6}
+	EndGlobalSection
+EndGlobal

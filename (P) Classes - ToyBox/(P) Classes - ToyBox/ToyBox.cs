@@ -5,12 +5,10 @@ using System.Text;
 namespace _P__Classes___ToyBox
 {
     class ToyBox
-    {
+    { 
         public List<Toy> Toys { get; set; }
-
-        public string Owner;
-
-        public string Location;
+        public string Owner { get; set; }
+        public string Location { get; set; }
 
         public ToyBox()
         {
@@ -20,7 +18,7 @@ namespace _P__Classes___ToyBox
         public Toy GetRandomToy()
         {
 
-        }
+        } 
 
-    }
+    } 
 }
