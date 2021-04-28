@@ -49,7 +49,7 @@ namespace _P__Classes___Cereal
                     }
                     else
                     {
-                        Console.Write("\t"); // just to match reset of format
+                        Console.Write("\t"); // just to match format
                     }
                     
                     Console.Write(c.ToString());
