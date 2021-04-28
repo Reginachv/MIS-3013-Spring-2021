@@ -22,7 +22,7 @@ namespace _P__Classes___Cereal
         }
         public override string ToString()
         {
-            return $"\n{Name} made by {Manufacturer} has {Calories} Calories and {Cups} cups.";
+            return $" is made by {Manufacturer} has total of {Calories} Calories and {Cups} cups"; //{Name} took out to avoid repetiton //took out 
         }
     }
 }
